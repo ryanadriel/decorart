@@ -31,3 +31,32 @@ window.addEventListener('scroll', function () {
     header.classList.remove('scroll')
   }
 })
+
+/* Testimonials carousel slider swiper */
+
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  mousewheel: true,
+  keybord: true
+})
+
+/* ScrollReveal: Mostrar elementos quando der scroll da página */
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 500,
+  reset: true
+})
+
+scrollReveal.reveal(
+  `#home .image, #home .text,
+  #about .image, #about .text,
+  #services .image, #services .text,
+  #testimonials header, #testimonials .testimonials
+  #contact .text, #contact .links
+  `,
+  { interval: 100 }
+)
