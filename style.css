@@ -116,7 +116,7 @@ body {
 
 #header {
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: 1px solid var(--body-color);
   margin-bottom: 2rem;
   display: flex;
 
@@ -124,7 +124,7 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: var(--body-color);
+  background-color: var(--base-color);
   width: 100%;
 }
 
@@ -135,11 +135,11 @@ body {
 }
 
 #header.scroll .logo span {
-  color: #e4e4e4;
+  color: white;
 }
 
 #header.scroll .icon-menu {
-  color: #e4e4e4;
+  color: white;
 }
 
 main {
@@ -154,7 +154,11 @@ main {
 }
 
 .logo span {
-  color: var(--base-color);
+  color: white;
+}
+
+.logo-alt span {
+  color: var(--body-color);
 }
 
 /*==== NAVIGATION =====================*/
@@ -236,7 +240,7 @@ nav ul.show ul.grid {
 
 /* toggle menu */
 .toggle {
-  color: var(--base-color);
+  color: white;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -483,4 +487,70 @@ nav.show div.icon-close {
 
 #contact ul li i {
   color: var(--base-color);
+}
+
+/*==== FOOTER =====================*/
+
+footer {
+  background: var(--base-color);
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+footer .social a {
+  margin-right: 2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-8px);
+}
+
+/* Back to top */
+.back-to-top {
+  background: var(--base-color);
+  color: var(--text-color-light);
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  padding: 0.5rem;
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsivo */
+@media (min-widht: 992px) {
+  .title {
+    font-size: 2.25rem;
+  }
 }
