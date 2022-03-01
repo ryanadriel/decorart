@@ -32,10 +32,10 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
-  
+
   /* fonts */
-  --title-font-size: 1.875rem,
-  --subtitle-font-size: 1rem;
+  --title-font-size: 1.5rem;
+  --subtitle-font-size: 1.125rem;
 
   --title-font: 'Poppins', sans-serif;
   --body-font: 'DM Sans', sans-serif;
@@ -51,10 +51,6 @@ body {
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
-}
-
-h1 {
-  font: 700 1.875rem "Poppins", sans-serif;
 }
 
 .title {
@@ -161,7 +157,6 @@ h1 {
 #header.scroll {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
 }
-
 
 /*==== LOGO =====================*/
 
@@ -372,7 +367,7 @@ nav.show div.icon-close {
 /*==== SERVICES =====================*/
 
 #services {
-  background: white;
+  background: e4e4e4;
 }
 
 #services .container {
@@ -417,6 +412,8 @@ nav.show div.icon-close {
 #testimonials .container {
   margin-left: 0;
   margin-right: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 #testimonials header {
@@ -596,8 +593,7 @@ footer .social a:hover {
     margin-left: auto;
     margin-right: auto;
   }
-  
-  
+
   .button {
     height: 3.125rem;
   }
@@ -608,11 +604,11 @@ footer .social a:hover {
     visibility: visible;
     top: 0;
   }
-  
+
   nav .menu ul {
-      display: flex;
-      gap: 2rem;
-    }
+    display: flex;
+    gap: 2rem;
+  }
 
   nav .menu ul li a.title {
     font: 400 1rem var(--body-font);
@@ -635,9 +631,9 @@ footer .social a:hover {
 
   /* home */
   #home .container {
-  grid-auto-flow: column;
-  justify-content: space-between;
-  margin: 0 auto;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 
   #home .image {
@@ -658,15 +654,15 @@ footer .social a:hover {
 
   /* services */
   #services .container {
-      margin: 0 auto;
-      grid-auto-flow: column;
-    }
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
 
-  /* testimonials */ 
+  /* testimonials */
   #testimonials .container {
-      margin-left: auto;
-      margin-right: auto;
-    }
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   /* contact */
   #contact .container {
@@ -692,7 +688,6 @@ footer .social a:hover {
   footer .logo {
     font-size: 2.25rem;
   }
-
 }
 
 /* large devices: 992 > */
