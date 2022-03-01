@@ -23,12 +23,12 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 90;
+  --hue: 36;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color: hsl(var(--hue) 40% 50%);
+  --base-color-second: hsl(var(--hue) 50% 90%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
-  --title-color: hsl(var(--hue) 41% 10%);
+  --title-color: hsl(var(--hue) 15% 10%);
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
@@ -75,7 +75,24 @@ h1 {
   transition: background 0.3s;
 }
 
+.button-services {
+  background-color: var(--base-color);
+  color: white;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  font: 500 1rem var(--body-font);
+  transition: background 0.3s;
+  margin-top: 1.2rem;
+}
+
 .button:hover {
+  background-color: var(--base-color-alt);
+}
+
+.button-services:hover {
   background-color: var(--base-color-alt);
 }
 
