@@ -13,6 +13,9 @@
       type="image/x-icon"
     />
 
+    <!-- ICONES -->
+    <link rel="stylesheet" href="assets/fonts/style.css" class="css" />
+
     <!-- STYLES -->
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,21 +27,119 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- FancyBox-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
   </head>
   <body>
     <header id="header">
       <nav class="container">
-        <a class="logo" href="#">Decor<span>Art</span>.</a>
+        <a class="logo" href="index.html#">Decor<span>Art</span>.</a>
         <!-- menu -->
-        <div class="menu">
+        <div class="menu-services">
           <ul class="grid">
-            <a class="button" href="index.html#services">voltar</a>
+            <a class="button-services" href="index.html#services">voltar</a>
           </ul>
         </div>
-        <!-- /menu -->
-        <div class="toggle icon-menu"></div>
-        <div class="toggle icon-close"></div>
       </nav>
     </header>
+
+    <main>
+      <!-- Gallery -->
+
+      <section class="section-services" id="gallery">
+        <div class="container grid">
+          <div class="title-project">
+            <h1 class="title">Projetos</h1>
+          </div>
+
+          <div class="fancybox">
+            <a data-fancybox="gallery" href="imgs/projetos/mesa1.jpeg">
+              <img class="rounded" src="imgs/projetos/mesa1.jpeg" />
+            </a>
+            <a data-fancybox="gallery" href="imgs/projetos/balcaosuspenso.jpeg">
+              <img class="rounded" src="imgs/projetos/balcaosuspenso.jpeg" />
+            </a>
+            <a data-fancybox="gallery" href="imgs/projetos/painel1.jpeg">
+              <img class="rounded" src="imgs/projetos/painel1.jpeg" />
+            </a>
+            <a data-fancybox="gallery" href="imgs/projetos/painel2.jpeg">
+              <img class="rounded" src="imgs/projetos/painel2.jpeg" />
+            </a>
+            <a data-fancybox="gallery" href="imgs/projetos//painel3.jpeg">
+              <img class="rounded" src="imgs/projetos/painel3.jpeg" />
+            </a>
+            <a data-fancybox="gallery" href="imgs/projetos/salao.jpeg">
+              <img class="rounded" src="imgs/projetos/salao.jpeg" />
+            </a>
+            <a data-fancybox="gallery" href="imgs/projetos/loja1.jpeg">
+              <img class="rounded" src="imgs/projetos/loja1.jpeg" />
+            </a>
+            <a data-fancybox="gallery" href="imgs/projetos/balcao1.jpeg">
+              <img class="rounded" src="imgs/projetos/balcao1.jpeg" />
+            </a>
+            <a data-fancybox="gallery" href="imgs/projetos/painel4.jpeg">
+              <img class="rounded" src="imgs/projetos/painel4.jpeg" />
+            </a>
+            <a data-fancybox="gallery" href="imgs/projetos/mesapresidente.jpeg">
+              <img class="rounded" src="imgs/projetos/mesapresidente.jpeg" />
+            </a>
+            <a data-fancybox="gallery" href="imgs/projetos/centro1.jpeg">
+              <img class="rounded" src="imgs/projetos/centro1.jpeg" />
+            </a>
+            <a data-fancybox="gallery" href="imgs/projetos/painel6.jpeg">
+              <img class="rounded" src="imgs/projetos/painel6.jpeg" />
+            </a>
+            <a data-fancybox="gallery" href="imgs/projetos/cozinha1.jpeg">
+              <img class="rounded" src="imgs/projetos/cozinha1.jpeg" />
+            </a>
+            <a data-fancybox="gallery" href="imgs/projetos/cozinha2.jpeg">
+              <img class="rounded" src="imgs/projetos/cozinha2.jpeg" />
+            </a>
+            <a data-fancybox="gallery" href="imgs/projetos/mesa2.jpeg">
+              <img class="rounded" src="imgs/projetos/mesa2.jpeg" />
+              <a data-fancybox="gallery" href="imgs/projetos/painel5.jpeg">
+                <img class="rounded" src="imgs/projetos/painel5.jpeg" />
+              </a>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Decor<span>Art</span>.</a>
+          <p>©2022 DecorArt.</p>
+          <p>Todos os direitos reservados</p>
+        </div>
+
+        <div class="social grid">
+          <a
+            href="https://www.instagram.com/decor_art_oficial/"
+            target="_blank"
+          >
+            <i class="icon-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/DecorArt-110473098243602"
+            target="_blank"
+          >
+            <i class="icon-facebook2"></i>
+          </a>
+          <a href="https://outlook.live.com/mail/0/" target="_blank">
+            <i class="icon-mail2"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FancyBox -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   </body>
 </html>

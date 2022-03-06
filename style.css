@@ -71,17 +71,30 @@ body {
   transition: background 0.3s;
 }
 
-.button-services {
+.button-projects {
   background-color: var(--base-color);
   color: white;
-  height: 3rem;
+  height: 2.5rem;
   display: inline-flex;
   align-items: center;
   padding: 0 2rem;
   border-radius: 0.25rem;
   font: 500 1rem var(--body-font);
   transition: background 0.3s;
-  margin-top: 1.2rem;
+  margin-top: 1.7rem;
+}
+
+.button-services {
+  background-color: var(--base-color);
+  color: white;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  font: 500 1rem var(--body-font);
+  transition: background 0.3s;
+  margin-top: 0;
 }
 
 .button:hover {
@@ -572,6 +585,103 @@ footer .social a:hover {
   transform: translateY(0);
 }
 
+/* Galeria */
+
+.section-services {
+  background: #f8f0f0;
+}
+
+.section-services img {
+  width: 32.4%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+.section-services h1 {
+  padding: 1.5rem;
+}
+
+a[data-fancybox] img {
+  cursor: zoom-in;
+}
+
+.fancybox__backdrop::after {
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  filter: blur(2px);
+  left: 50%;
+  top: 50%;
+  transform: scale(11);
+  opacity: 0.3;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.fancybox__container {
+  --fancybox-bg: rgba(0, 0, 0, 0.9);
+
+  --fancybox-thumbs-width: 48px;
+  --fancybox-thumbs-ratio: 1;
+
+  --carousel-button-bg: rgb(91 78 76 / 74%);
+
+  --carousel-button-svg-width: 24px;
+  --carousel-button-svg-height: 24px;
+
+  --carousel-button-svg-stroke-width: 2.5;
+}
+
+.fancybox__nav {
+  --carousel-button-svg-width: 24px;
+  --carousel-button-svg-height: 24px;
+}
+
+.fancybox__nav .carousel__button.is-prev {
+  left: 20px;
+}
+
+.fancybox__nav .carousel__button.is-next {
+  right: 20px;
+}
+
+.carousel__button.is-close {
+  right: auto;
+  top: 20px;
+  left: 20px;
+}
+
+.fancybox__slide {
+  padding: 8px 88px;
+}
+
+/* Thumbnails */
+.fancybox__thumbs .carousel__slide {
+  padding: 8px 8px 16px 8px;
+}
+
+.is-nav-selected::after {
+  display: none;
+}
+
+.fancybox__thumb {
+  border-radius: 6px;
+  opacity: 0.4;
+}
+
+.fancybox__thumb:hover,
+.is-nav-selected .fancybox__thumb {
+  border-radius: 6px;
+  opacity: 1;
+}
+
+.is-nav-selected .fancybox__thumb::after {
+  display: none;
+}
+
 /*========== MEDIA QUERIES ===========*/
 /* extra large devices: 1200 > */
 @media (min-width: 1200px) {
@@ -584,6 +694,12 @@ footer .social a:hover {
 
   .section {
     padding: 10rem 0;
+  }
+
+  .section-services img {
+    width: 24.7%;
+    height: auto;
+    border-radius: 0.25rem;
   }
 
   .section header,
