@@ -109,8 +109,8 @@ body {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(159, 36%, 57%, 1),
-    hsla(159, 65%, 88%, 0.34)
+    hsl(var(--hue) 40% 50%),
+    hsl(var(--hue) 50% 90%)
   );
 }
 
@@ -118,8 +118,8 @@ body {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(159, 65%, 88%, 0.34),
-    hsla(159, 36%, 57%, 1)
+    hsl(var(--hue) 40% 50%),
+    hsl(var(--hue) 50% 90%)
   );
 }
 
@@ -364,6 +364,8 @@ nav.show div.icon-close {
 }
 
 #about .image img {
+  height: 100%;
+  width: auto;
   position: relative;
 }
 
@@ -380,7 +382,7 @@ nav.show div.icon-close {
 /*==== SERVICES =====================*/
 
 #services {
-  background: e4e4e4;
+  background: var(--body-color);
 }
 
 #services .container {
@@ -682,6 +684,111 @@ a[data-fancybox] img {
   display: none;
 }
 
+/* Form */
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  padding: 15px;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+}
+
+.login-box h1 {
+  color: white;
+  margin: 0 0 30px;
+  padding: 10px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+input,
+label {
+  width: 100%;
+  color: var(--title-color);
+  border: none;
+  background: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+input:focus,
+label:focus {
+  outline: none;
+}
+
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+  top: -20px;
+  font-size: 12px;
+}
+
+input[type='submit'] {
+  background-color: var(--base-color);
+  color: white;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 0.25rem;
+  font: 500 1rem var(--body-font);
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inputBox {
+  flex: 1 1 100%;
+  position: relative;
+  flex: 1 1 45%;
+  margin-top: 2.5%;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.section-form {
+  padding: calc(19rem + var(--header-height)) 0;
+  background-image: url(/imgs/imgform/mostruario.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* validations */
+
+.error-validation {
+  color: #ff1a1a;
+  position: absolute;
+  top: 57px;
+  font-size: 0.8rem;
+}
+
+.template {
+  display: none;
+}
+
 /*========== MEDIA QUERIES ===========*/
 /* extra large devices: 1200 > */
 @media (min-width: 1200px) {
@@ -702,6 +809,11 @@ a[data-fancybox] img {
     border-radius: 0.25rem;
   }
 
+  #about .container.grid .image img {
+    width: 100%;
+    height: auto;
+  }
+
   .section header,
   #testimonials header {
     max-width: 32rem;
@@ -709,6 +821,8 @@ a[data-fancybox] img {
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* form */
 
   .button {
     height: 3.125rem;
@@ -806,10 +920,29 @@ a[data-fancybox] img {
   }
 }
 
-/* large devices: 992 > */
-@media (min-width: 992px) {
+/* large devices: 990 > */
+@media (min-width: 990px) {
   :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
+  }
+
+  #about .image img {
+    width: 40%;
+    height: auto;
+  }
+}
+
+@media (min-width: 880px) {
+  #about .image img {
+    width: 30%;
+    height: auto;
+  }
+}
+
+@media (min-width: 700px) {
+  #about .image img {
+    width: 50%;
+    height: auto;
   }
 }

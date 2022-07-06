@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- PAGE INFO -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Form de Registro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="favicon/WhatsApp Image 2022-02-02 at 12.18.07.jpeg"
+      type="image/x-icon"
+    />
+
+    <!-- Links -->
+    <link rel="stylesheet" href="style.css" />
+
+     <!-- ICONES -->
+     <link rel="stylesheet" href="assets/fonts/style.css" class="css">
+     
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="index.html#">Decor<span>Art</span>.</a>
+        <!-- menu -->
+        <div class="menu-form">
+          <ul class="grid">
+            <a class="button-services" href="index.html#home">voltar</a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+
+      <section class="section-form" id="formulario">
+        <div class="container grid">
+          <div class="login-box">
+            <h1 class="title">Entre em contato!</h1>
+              <form id="register-form">
+                <div class="inputBox">
+                  <input type="text" name="name" id="name" class="inputUser" required>
+                  <label for="name" class="labelInput">Nome</label>
+                  </div>
+                  <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">E-mail</label>
+                  </div>
+                  <div class="inputBox">
+                    <input id="phone" type="tel" name="phone" class="inputUser" required>
+                    <label for="phone" class="labelInput">Seu número</label>
+                  </div>
+                  <div class="inputBox">
+                    <input id="city" type="text" name="city" class="inputUser" required>
+                    <label for="phone" class="labelInput">Cidade</label>
+                  </div>
+                  <div class="inputBox">
+                    <input id="state" type="text" name="state" class="inputUser" required>
+                    <label for="Estado" class="labelInput">Estado</label>
+                  </div>
+                  <div class="inputBox">
+                    <input type="text" name="adress" id="adress" class="inputUser" required>
+                    <label for="adress" class="labelInput">Endereço</label>
+                  </div>
+                  <input type="submit" id="btn-submit" value="Registrar">
+                </div>
+                </div>
+              </form>
+          </div>
+        </div>
+      </section>
+      <p class="error-validation template"></p>
+    </main>
+    
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Decor<span>Art</span>.</a>
+          <p>©2022 DecorArt.</p>
+          <p>Todos os direitos reservados</p>
+        </div>
+
+        <div class="social grid">
+          <a
+            href="https://www.instagram.com/decor_art_oficial/"
+            target="_blank"
+          >
+            <i class="icon-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/DecorArt-110473098243602"
+            target="_blank"
+          >
+            <i class="icon-facebook2"></i>
+          </a>
+          <a href="https://outlook.live.com/mail/0/" target="_blank">
+            <i class="icon-mail2"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main.js -->
+    <script src="main.js"></script>
+  </body>
+</html>
