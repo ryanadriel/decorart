@@ -186,6 +186,11 @@ body {
   color: var(--body-color);
 }
 
+.logo-footer {
+  color: var(--body-color);
+  text-decoration: underline;
+}
+
 /*==== NAVIGATION =====================*/
 
 nav {
